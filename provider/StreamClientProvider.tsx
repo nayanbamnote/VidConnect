@@ -31,7 +31,7 @@ import Loader from '@/components/Loader';
         setVideoClient(client);
     }, [user, isLoaded])
 
-    if(!videoClient) return <Loader>Loading...</Loader>
+    if(!videoClient) return <Loader/>
 
     return (
       <StreamVideo client={videoClient}>
